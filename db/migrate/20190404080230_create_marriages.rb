@@ -5,7 +5,7 @@ class CreateMarriages < ActiveRecord::Migration[5.2]
       t.references :female, foreign_key: true
       t.string :anniversary
       t.string :photo
-      t.string :timezone
+      t.string :timezone, default: "Central Time (US & Canada)"
 
       t.timestamps
     end

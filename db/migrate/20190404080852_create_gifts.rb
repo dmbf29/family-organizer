@@ -5,7 +5,7 @@ class CreateGifts < ActiveRecord::Migration[5.2]
       t.string :url
       t.references :child, foreign_key: true
       t.integer :birthday
-      t.boolean :purchased
+      t.boolean :purchased, default: false
 
       t.timestamps
     end
