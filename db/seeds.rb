@@ -17,5 +17,6 @@ ginny.save!
 chris_ginny = Marriage.new(
   male: chris,
   female: ginny,
+  anniversay: Date.new(2014, 05, 22),
   remote_photo_url: "https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/54257146_10107103659775820_5541410184468889600_o.jpg?_nc_cat=108&_nc_ht=scontent-nrt1-1.xx&oh=c676ec3386b93cabbc5def7393a02033&oe=5D3BD081"
 )
