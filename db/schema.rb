@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_082317) do
   create_table "marriages", force: :cascade do |t|
     t.bigint "male_id"
     t.bigint "female_id"
-    t.string "anniversary"
+    t.date "anniversary"
     t.string "photo"
     t.string "timezone", default: "Central Time (US & Canada)"
     t.datetime "created_at", null: false
@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_082317) do
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.string "name"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
