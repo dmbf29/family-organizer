@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_04_04_082317) do
   create_table "children", force: :cascade do |t|
     t.bigint "marriage_id"
     t.string "first_name"
+    t.string "middle_name"
     t.date "birthday"
     t.string "photo"
     t.string "relation"
