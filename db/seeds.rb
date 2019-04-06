@@ -78,4 +78,45 @@ kara = Child.new(
 )
 kara.save!
 
+corey = Male.new(
+  first_name: "Corey",
+  last_name: "Lynch",
+  birthday: Date.new(1976, 02, 14),
+  remote_photo_url: "https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/27657587_10109651926937978_8803482461842541315_n.jpg?_nc_cat=109&_nc_ht=scontent-nrt1-1.xx&oh=3e6cc257c7eeed99351115452ff1391c&oe=5D01DF00"
+)
+corey.save!
+
+sumin = Female.new(
+  first_name: "Sumin",
+  last_name: "Ha",
+  birthday: Date.new(1982, 11, 05),
+  remote_photo_url: "https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/21200757_10155168375988999_1044660095596661545_o.jpg?_nc_cat=109&_nc_ht=scontent-nrt1-1.xx&oh=54c645ac42b11f81b3d4babbb6934d61&oe=5D459EF9"
+)
+sumin.save!
+
+corey_sumin = Marriage.new(
+  male: corey,
+  female: sumin,
+  anniversary: Date.new(2009, 08, 15),
+  remote_photo_url: "https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/12182485_10100887317734995_4251685200022136235_o.jpg?_nc_cat=103&_nc_ht=scontent-nrt1-1.xx&oh=51d6607744618a18ed00137bd2692d8c&oe=5D3AF486"
+)
+corey_sumin.save!
+
+lainey = Child.new(
+  first_name: "Lainey (Alaina)",
+  middle_name: "Marie",
+  birthday: Date.new(2012, 11, 13),
+  marriage: corey_sumin,
+  remote_photo_url: "https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/35329038_10155811343352607_4895463686019219456_o.jpg?_nc_cat=101&_nc_ht=scontent-nrt1-1.xx&oh=66f50bae5ce1e0541f73fb39130fedcd&oe=5D485E5E"
+)
+lainey.save!
+
+kara = Child.new(
+  first_name: "Kara",
+  middle_name: "Louise",
+  birthday: Date.new(2017, 01, 19),
+  marriage: corey_sumin,
+  remote_photo_url: "https://scontent-nrt1-1.xx.fbcdn.net/v/t1.0-9/38792742_10110477309624458_7994790427016298496_n.jpg?_nc_cat=103&_nc_ht=scontent-nrt1-1.xx&oh=9246089b7315578691714849ef84fdae&oe=5D4910D0"
+)
+kara.save!
 
